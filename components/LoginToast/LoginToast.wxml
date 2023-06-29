@@ -1,0 +1,15 @@
+<!--components/LoginToast/LoginToast.wxml-->
+<view class="modle_bg"  wx:if="{{sho}}"></view>
+<view class="modle_all"  wx:if="{{sho}}">
+  <view>
+    <text>当前账户未登录，请先登录</text>
+  </view>
+  <view>
+    <text>登录后可体验完整功能</text>
+  </view>
+
+  <view class="modle_btn">
+    <button bindtap="loginddd">立即登录</button>
+    <button bindtap="nologin">稍后登录</button>
+  </view>
+</view>

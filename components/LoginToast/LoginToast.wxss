@@ -1,0 +1,38 @@
+/* components/LoginToast/LoginToast.wxss */
+.modle_bg {
+  margin: 0;
+  padding: 0;
+  width: 750rpx;
+  height: 1334rpx;
+  background-color: burlywood;
+  opacity: 0.6;
+}
+
+.modle_all {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  border: 1rpx solid black;
+  width: 500rpx;
+  height: 500rpx;
+  margin: auto;
+  background-color: white;
+}
+
+
+.modle_btn {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.modle_btn button {
+  border: 1rpx solid black;
+  background-color: white;
+  color: blue;
+  width: 50%;
+}
