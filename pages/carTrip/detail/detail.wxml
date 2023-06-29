@@ -1,0 +1,17 @@
+<!--pages/carTrip/detail/detail.wxml-->
+<view>
+  <view>
+    <image class="ct-list__item-car" src="../../../images/index/ct-car.png" mode="aspectFit"></image>
+    <text>{{data.busNo}}</text>
+  </view>
+  <view><text>请使用校园卡刷卡乘车</text></view>
+  <view>
+    <text>{{data.startStation}}</text>
+    <view>1</view>
+    <view wx:for="{{data.middleStation}}">
+      <text>{{item}}</text>
+      <view>1</view>
+    </view>
+    <text>{{data.endStation}}</text>
+  </view>
+</view>

@@ -1,0 +1,44 @@
+<!--pages/carTrip/list/list.wxml-->
+<view class="ct-container">
+
+  <view class="ct-select">
+    <view class="ct-select__item" data-key="areaList">
+      <view class="ct-select__item-title">{{areaName}}</view>
+      <view class="ct-select__item-column"></view>
+    </view>
+    <view class="ct-select__item" data-key="timeList">
+      <view class="ct-select__item-title">{{timeName}}</view>
+      <view class="ct-select__item-column"></view>
+    </view>
+  </view>
+
+
+  <view class="ct-list">
+    <view class="ct-list__tip">已收藏{{lineCount}}条线路</view>
+    <view class="ct-list__item" wx:for="{{lineList}}" wx:key="id" data-url="{{'/pages/carTrip/detail/detail?busNo=' + item.busNo}}" catchtap="goDetail">
+      <view class="ct-list__item-top">
+        <image class="ct-list__item-car" src="../../../images/index/ct-car.png" mode="aspectFit"></image>
+        <view class="ct-list__item-title ct-list__title-mt">{{item.busNo}}</view>
+        <view class="ct-list__item-title">{{item.startTime}}</view>
+        <view class="ct-list__item-collect {{item.favorite === 1 ? 'ct-list__item-collected' : ''}}" catchtap="collectHandle" data-busNo="{{item.busNo}}" data-favorite="{{item.favorite}}">
+          <image src="{{'../../../images/index/collect' + (item.favorite === 1 ? 'ed' : '') + '.png'}}" mode="aspectFit"></image>
+          {{item.favorite === 1 ? '已收藏' : '收藏'}}
+        </view>
+        <view class="ct-list__item-fill"></view>
+        <image class="ct-list__item-left" src="../../../images/index/small_left.png" mode="aspectFit"></image>
+      </view>
+
+      <view class="ct-list__item-bottom">
+        <view class="ct-list__item-area">
+          <view class="ct-list__item-start">始</view>
+          <view class="ct-list__item-area-title">{{item.startStation}}</view>
+        </view>
+        <view class="ct-list__item-line"></view>
+        <view class="ct-list__item-area ct-list__item-area-two">
+          <view class="ct-list__item-end">终</view>
+          <view class="ct-list__item-area-title">{{item.endStation}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

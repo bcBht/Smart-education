@@ -1,0 +1,249 @@
+/* pages/carTrip/list/list.wxss */
+page {
+  background-color: #F6FAFF;
+}
+
+.ct-container {
+  position: relative;
+  padding: 0 32rpx;
+}
+
+.ct-select {
+  position: fixed;
+  top: 20rpx;
+  left: 32rpx;
+  background: #fff;
+  display: flex;
+  width: 686rpx;
+  height: 96rpx;
+  z-index: 100;
+}
+
+.ct-select__item {
+  width: 343rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ct-select__item-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 96rpx;
+  line-height: 96rpx;
+  max-width: 283rpx;
+}
+
+.ct-select__item-column {
+  width: 0;
+  height: 0;
+  border: 10rpx solid transparent;
+  border-top: 12rpx solid #333;
+  margin-left: 14rpx;
+  margin-top: 10rpx;
+}
+
+.ct-select__item.ct-select__item-selected .ct-select__item-title {
+}
+
+.ct-select__item.ct-select__item-selected .ct-select__item-column {
+
+}
+
+.ct-select-main {
+
+}
+
+.ct-select-main__content {
+
+}
+
+.ctsm__label {
+
+}
+
+.ctsm__scroll {
+
+}
+
+.ctsm__title {
+
+}
+
+.ctsm__checkbox {
+  width: 28rpx;
+  height: 28rpx;
+  height: 72rpx;
+  display: flex;
+  align-items: center;
+}
+
+/*checkbox 整体大小  */
+.ct-select-main__content checkbox {
+
+}
+/*checkbox 选项框大小  */
+.ct-select-main__content checkbox .wx-checkbox-input {
+
+}
+/*checkbox选中后样式  */
+.ct-select-main__content checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+
+}
+/*checkbox选中后图标样式  */
+.ct-select-main__content checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+
+}
+
+.ctsm__btns {
+
+}
+
+.ctsm__btns-item {
+
+}
+
+.ctsm__btns-item-confirm {
+
+}
+
+.ct-list {
+  margin: 20rpx 0;
+  margin-top: 120rpx;
+}
+
+.ct-list__tip {
+
+}
+
+.ct-list__item {
+  background-color: white;
+  margin: 20rpx 0;
+  padding: 20rpx;
+}
+
+.ct-list__item-top {
+  display: flex;
+  margin: 40rpx 0;
+}
+
+.ct-list__item-car {
+  height: 48rpx;
+  width: 48rpx;
+}
+
+.ct-list__item-title {
+  width: 100rpx;
+}
+
+.ct-list__title-mt {
+  margin: 0 20rpx;
+}
+
+.ct-list__item-collect {  
+  width: 180rpx;
+  margin: 0 50rpx;
+}
+
+.ct-list__item-collected {
+  color: blue;
+}
+
+.ct-list__item-collect image {
+  height: 32rpx;
+  width: 32rpx;
+  margin-right: 8rpx;
+}
+
+.ct-list__item-fill {
+  width: 44rpx;
+}
+
+.ct-list__item-left {
+  height: 24rpx;
+  width: 24rpx;
+  justify-self: flex-end;
+}
+
+.ct-list__item-bottom {
+  display: flex;
+}
+
+.ct-list__item-line {
+
+  height: 2px;
+  width: 74rpx;
+  background: #4C4C4C;
+  position: relative;
+  top: 90rpx;
+  margin-bottom: 16rpx;
+  
+}
+
+.ct-list__item-line::after {
+  content: '';
+  display: block;
+  width: 18rpx;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  bottom: 8rpx;
+  transform: rotate(45deg);
+  background: #4C4C4C;
+}
+
+.ct-list__item-area {
+  /* display: flex; */
+  flex: 1;
+}
+
+.ct-list__item-area-two {
+  text-align: right;
+}
+
+.ct-list__item-start {
+  background-color: green;
+  width: 1.4em;
+  text-align: center;
+  border-radius: 25%;
+  color: white;
+}
+
+.ct-list__item-end {
+  background-color: red;
+  width: 1.4em;
+  text-align: center;
+  border-radius: 25%;
+  color: white;
+  position: relative;
+  left: 240rpx;
+}
+
+.ct-list__item-area-title {
+  margin: 10rpx 0;
+}
+
+.radio_view{
+  margin: 100rpx 0 0 0;
+}
+
+.bg_radio{
+  background-color: #F6FAFF;
+}
+.modle_btn {
+  display: flex;
+}
+
+.modle_btn button {
+  background-color: #F6FAFF;
+  color: black;
+  width: 50%;
+}
+
+.modle_btn button:nth-child(2) {
+  color: blue;
+}

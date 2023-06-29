@@ -1,0 +1,9 @@
+/* pages/carTrip/detail/detail.wxss */
+page {
+  background-color: #F6FAFF;
+}
+
+image {
+  height: 48rpx;
+  width: 48rpx;
+}

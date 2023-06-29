@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "filter":"/components/Filter/index"
+  },
+  "navigationBarTitleText": "校车出行"
+}
